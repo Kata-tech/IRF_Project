@@ -9,3 +9,4 @@ C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\Final
 C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\FinalVersion.exe
 C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\FinalVersion.pdb
 C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\FinalVersion.Form1.resources
+C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\FinalVersion.csproj.ResolveComReference.cache

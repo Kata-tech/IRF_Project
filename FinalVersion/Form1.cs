@@ -22,5 +22,11 @@ namespace FinalVersion
             Form2 myfrom = new Form2();
             myfrom.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 myform = new Form3();
+            myform.Show();
+        }
     }
 }
