@@ -16,5 +16,11 @@ namespace FinalVersion
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 myfrom = new Form2();
+            myfrom.Show();
+        }
     }
 }

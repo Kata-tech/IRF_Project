@@ -1,0 +1,11 @@
+C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\bin\Debug\FinalVersion.exe.config
+C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\bin\Debug\FinalVersion.exe
+C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\bin\Debug\FinalVersion.pdb
+C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\FinalVersion.csprojAssemblyReference.cache
+C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\FinalVersion.Form2.resources
+C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\FinalVersion.Properties.Resources.resources
+C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\FinalVersion.csproj.GenerateResource.cache
+C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\FinalVersion.csproj.CoreCompileInputs.cache
+C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\FinalVersion.exe
+C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\FinalVersion.pdb
+C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\FinalVersion.Form1.resources
