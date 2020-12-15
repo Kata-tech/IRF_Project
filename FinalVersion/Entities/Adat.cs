@@ -13,5 +13,7 @@ namespace FinalVersion.Entities
         public string Sorszam { get; set; }
         public int Ejszaka { get; set; }
         public int Forint { get; set; }
+
+        
     }
 }
