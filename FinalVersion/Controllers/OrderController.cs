@@ -55,14 +55,14 @@ namespace FinalVersion.Controllers
         {
             return Regex.IsMatch(
                 telepules,
-                @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+                @"^([a-zA-Z\u0080-\u024F]+(?:. |-| |'))*[a-zA-Z\u0080-\u024F]*$");
         }
 
         public bool ValidateHotelnev(string hotelnev)
         {
             return Regex.IsMatch(
                 hotelnev,
-                @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$");
+                @"^.{1,35}$");
         }
 
         public bool ValidateSorszam(string sorszam)
