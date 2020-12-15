@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Abstractions\IOrderManager.cs" />
     <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\ValidationException.cs" />
     <Compile Include="Entities\Adat.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

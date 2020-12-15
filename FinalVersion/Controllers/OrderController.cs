@@ -23,11 +23,19 @@ namespace FinalVersion.Controllers
         {
             if (!ValidateTelepules(telepules))
                 throw new ValidationException(
-                    "A megadott e-mail cím nem megfelelő!");
+                    "A megadott település nem megfelelő!");
             if (!ValidateHotelnev(hotelnev))
                 throw new ValidationException(
-                    "A megadottt jelszó nem megfelelő!" +
-                    "A jelszó legalább 8 karakter hosszú kell legyen, csak az angol ABC betűiből és számokból állhat, és tartalmaznia kell legalább egy kisbetűt, egy nagybetűt és egy számot.");
+                    "A megadottt hotel név nem megfelelő!");
+            if (!ValidateSorszam(sorszam))
+                throw new ValidationException(
+                    "A megadottt sorszám nem megfelelő!");
+            if (!ValidateEjszaka(ejszaka))
+                throw new ValidationException(
+                    "A megadottt éjszakák száma nem megfelelő!");
+            if (!ValidateForint(forint))
+                throw new ValidationException(
+                    "A megadottt forint mennyiség nem megfelelő!");
 
             var account = new Adat()
             {
@@ -43,18 +51,39 @@ namespace FinalVersion.Controllers
             return newAccount;
         }
 
-        public bool ValidateTelepules(string email)
+        public bool ValidateTelepules(string telepules)
         {
             return Regex.IsMatch(
-                email,
+                telepules,
                 @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
         }
 
-        public bool ValidateHotelnev(string password)
+        public bool ValidateHotelnev(string hotelnev)
         {
             return Regex.IsMatch(
-                password,
+                hotelnev,
                 @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$");
+        }
+
+        public bool ValidateSorszam(string sorszam)
+        {
+            return Regex.IsMatch(
+                sorszam,
+                @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+        }
+
+        public bool ValidateEjszaka(int ejszaka)
+        {
+            return Regex.IsMatch(
+                ejszaka.ToString(),
+                @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+        }
+
+        public bool ValidateForint(int forint)
+        {
+            return Regex.IsMatch(
+                forint.ToString(),
+                @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
         }
     }
 }
