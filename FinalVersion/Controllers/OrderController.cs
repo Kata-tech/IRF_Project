@@ -69,21 +69,21 @@ namespace FinalVersion.Controllers
         {
             return Regex.IsMatch(
                 sorszam,
-                @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+                @"^[0-9]{1,20}$");
         }
 
         public bool ValidateEjszaka(int ejszaka)
         {
             return Regex.IsMatch(
                 ejszaka.ToString(),
-                @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+                @"^[1-9][0-9]{0,1}$");
         }
 
         public bool ValidateForint(int forint)
         {
             return Regex.IsMatch(
                 forint.ToString(),
-                @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+                @"^[1-9][0-9]{1,7}$");
         }
     }
 }
