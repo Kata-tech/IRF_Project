@@ -32,7 +32,7 @@ namespace FinalVersion
         {
             
             Form2 myfrom = new Form2();
-            myfrom.Show();
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
