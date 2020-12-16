@@ -34,7 +34,7 @@ namespace FinalVersion
             
             InitializeComponent();
             
-            Lista = GetLista(@"C:/Temp/ajanlatok.csv");
+            Lista = GetLista(@"csvfile/ajanlatok.csv");
             Lista = Lista.Concat(Form1._controller.OrderManager.Adats).ToList();
             dataGridView1.DataSource = Form1._controller.OrderManager.Adats;
 
