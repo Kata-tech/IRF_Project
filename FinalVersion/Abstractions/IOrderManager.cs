@@ -10,7 +10,7 @@ namespace FinalVersion.Abstractions
 {
     public interface IOrderManager
     {
-        BindingList<Adat> Adats { get; }
+        BindingList<Adat> Adats { get;  }
         Adat CreateAdat(Adat adat);
     }
 }

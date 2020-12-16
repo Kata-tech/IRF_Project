@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using FinalVersion.Entities;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.Reflection;
+using FinalVersion.Controllers;
 
 namespace FinalVersion
 {
@@ -21,6 +22,7 @@ namespace FinalVersion
         Excel.Worksheet xlSheet; // Munkalap a munkafüzeten belül
 
         List<Adat> Lista = new List<Adat>();
+        private OrderController _controller = new OrderController();
 
         public Form2()
         {
@@ -28,9 +30,10 @@ namespace FinalVersion
             InitializeComponent();
             
             Lista = GetLista(@"C:/Temp/ajanlatok.csv");
-            dataGridView1.DataSource = Lista;
+            Lista.AddRange(_controller.OrderManager.Adats);
+            dataGridView1.DataSource = _controller.OrderManager.Adats;
 
-            
+
 
             CreateExcel();
 
