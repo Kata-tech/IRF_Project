@@ -18,7 +18,7 @@ namespace FinalVersion
     public partial class Form2 : Form
     {
 
-        private OrderController _controller = new OrderController();
+        
 
        
 
@@ -35,8 +35,8 @@ namespace FinalVersion
             InitializeComponent();
             
             Lista = GetLista(@"C:/Temp/ajanlatok.csv");
-            Lista.AddRange(_controller.OrderManager.Adats);
-            dataGridView1.DataSource = _controller.OrderManager.Adats;
+            
+            dataGridView1.DataSource = Form1._controller.OrderManager.Adats;
 
 
 

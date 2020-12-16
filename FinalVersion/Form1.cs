@@ -17,7 +17,7 @@ namespace FinalVersion
 {
     public partial class Form1 : Form
     {
-        private OrderController _controller = new OrderController();
+        public static OrderController _controller = new OrderController();
 
        
         public Form1()
