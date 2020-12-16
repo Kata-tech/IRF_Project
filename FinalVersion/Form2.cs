@@ -163,7 +163,12 @@ namespace FinalVersion
 
             Excel.Range adatokRange = xlSheet.get_Range(GetCell(2,1),
              GetCell(1 + values.GetLength(0), values.GetLength(1)));
+            adatokRange.EntireColumn.AutoFit();
+            adatokRange.Interior.Color = Color.SeaShell;
+            adatokRange.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter;
             
+            adatokRange.BorderAround(Excel.XlLineStyle.xlContinuous);
+            adatokRange.Borders.LineStyle = Excel.XlLineStyle.xlContinuous;
         }
         }
 }
