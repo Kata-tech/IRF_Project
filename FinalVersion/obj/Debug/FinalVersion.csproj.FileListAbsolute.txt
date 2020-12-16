@@ -10,3 +10,8 @@ C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\Final
 C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\FinalVersion.pdb
 C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\FinalVersion.Form1.resources
 C:\Users\Kata\source\repos\IRF_Project\FinalVersion\FinalVersion\obj\Debug\FinalVersion.csproj.ResolveComReference.cache
+C:\Users\Kata\source\repos\IRF_Project\finalversion\FinalVersion\bin\Debug\Eco.Handles.dll
+C:\Users\Kata\source\repos\IRF_Project\finalversion\FinalVersion\bin\Debug\Eco.Interfaces.dll
+C:\Users\Kata\source\repos\IRF_Project\finalversion\FinalVersion\bin\Debug\Eco.LinqExtender.dll
+C:\Users\Kata\source\repos\IRF_Project\finalversion\FinalVersion\bin\Debug\System.Buffers.dll
+C:\Users\Kata\source\repos\IRF_Project\finalversion\FinalVersion\obj\Debug\FinalVersion.csproj.CopyComplete

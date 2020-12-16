@@ -17,12 +17,17 @@ namespace FinalVersion
 {
     public partial class Form2 : Form
     {
+
+        private OrderController _controller = new OrderController();
+
+       
+
         Excel.Application xlApp; // A Microsoft Excel alkalmazás
         Excel.Workbook xlWB; // A létrehozott munkafüzet
         Excel.Worksheet xlSheet; // Munkalap a munkafüzeten belül
 
         List<Adat> Lista = new List<Adat>();
-        private OrderController _controller = new OrderController();
+        
 
         public Form2()
         {
