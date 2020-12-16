@@ -1,10 +1,8 @@
-A szoftverem egy utazási iroda programja. 
-A program megkapja az adott megrendeléseket egy csv fájlban. Ezeket egy listában tárolja a program. Ezek az adatok soronként: település neve, hotel neve, csomag sorszáma, éjszakák száma, férõhelyek száma, forint fõ/éj, kedvezmény.
-A cég hozzáadhat ehhez a listához új megrendeléseket. Ilyenkor az ûrlapon található mezõket kitölti (ezt ellenõrizzük Unit Testtel), és ezeket a program string mátrixban tárolja. 
-Az illeszkedési minta adaptere segítségével a csv fájlból bekért listát áttudjuk alakítani string mátrixba, így hozzátudjuk adni az újabb adatokat, majd a végleges tömböt visszatudjuk alakítani listává. Miután megvan az egész lista, kiszámoljuk az összesen fizetendõ pénzösszeget az adott csomagokhoz.
-Az összes adatot a kiszámolt pénzösszeggel exportáljuk excelbe, formázottan. 
-A végén kiírja a szoftver, hogy melyik vendég, hány forinttal tartozik a cégnek.
-Miután ezt kiírta, ha 30 másodperc múlva nem kattintunk semmire, akkor visszavisz az eredeti kezdõoldalra (ehhez használom a Timert).  
+A szoftverem egy utazÃ¡si iroda programja. 
+A program megkapja az adott megrendelÃ©seket egy csv fÃ¡jlban. Ezeket egy listÃ¡ban tÃ¡rolja a program. Ezek az adatok soronkÃ©nt: telepÃ¼lÃ©s neve, hotel neve, csomag sorszÃ¡ma, Ã©jszakÃ¡k szÃ¡ma, forint fÅ‘/Ã©j.
+A cÃ©g hozzÃ¡adhat ehhez a listÃ¡hoz Ãºj megrendelÃ©seket. Ilyenkor az Å±rlapon talÃ¡lhatÃ³ mezÅ‘ket kitÃ¶lti (ezt ellenÅ‘rizzÃ¼k Unit Testtel), Ã©s ezeket a program egy Ãºjabb listÃ¡ban tÃ¡rolja.
+Ha az adott Ã¼gyfÃ©l 1 percnÃ©l tovÃ¡bb nem mozdÃ­tja az egerÃ©t az Å±rlaprÃ³l, akkor elmenti magÃ¡tÃ³l a rendszer (timer segÃ­tsÃ©gÃ©vel). 
+VÃ©gÃ¼l az Ã¶sszes csomag adatÃ¡t tudjuk exportÃ¡lni egy Excel fÃ¡jlba, Ãºgy, hogy a rÃ©gi listÃ¡hoz hozzÃ¡adom az Ãºj listÃ¡t. 
 
 
 
