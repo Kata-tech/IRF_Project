@@ -15,3 +15,4 @@ C:\Users\Kata\source\repos\IRF_Project\finalversion\FinalVersion\bin\Debug\Eco.I
 C:\Users\Kata\source\repos\IRF_Project\finalversion\FinalVersion\bin\Debug\Eco.LinqExtender.dll
 C:\Users\Kata\source\repos\IRF_Project\finalversion\FinalVersion\bin\Debug\System.Buffers.dll
 C:\Users\Kata\source\repos\IRF_Project\finalversion\FinalVersion\obj\Debug\FinalVersion.csproj.CopyComplete
+C:\Users\Kata\source\repos\IRF_Project\finalversion\FinalVersion\bin\Debug\csvfile\ajanlatok.csv

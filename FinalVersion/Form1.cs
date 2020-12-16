@@ -51,9 +51,16 @@ namespace FinalVersion
                 MessageBox.Show(ex.Message);
             }
 
-            
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
 
-    }
+
+
+
+        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
