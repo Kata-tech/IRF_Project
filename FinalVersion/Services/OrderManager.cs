@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,7 @@ namespace FinalVersion.Services
 {
     public class OrderManager : IOrderManager
     {
-        public List<Adat> Adats { get; } = new List<Adat>();
+        public BindingList<Adat> Adats { get; } = new BindingList<Adat>();
 
         public Adat CreateAdat(Adat adat)
         {

@@ -21,6 +21,7 @@ namespace FinalVersion
         Excel.Worksheet xlSheet; // Munkalap a munkafüzeten belül
 
         List<Adat> Lista = new List<Adat>();
+
         public Form2()
         {
             
