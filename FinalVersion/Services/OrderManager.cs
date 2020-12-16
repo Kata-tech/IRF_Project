@@ -14,11 +14,11 @@ namespace FinalVersion.Services
 
         public Adat CreateAdat(Adat adat)
         {
-            var oldAccount = (from a in Adats
+            var regiadat = (from a in Adats
                               where a.Sorszam.Equals(adat.Sorszam)
                               select a).FirstOrDefault();
 
-            if (oldAccount != null)
+            if (regiadat != null)
                 throw new ApplicationException(
                     "Már létezik rendelés ilyen sorszámmal!");
 

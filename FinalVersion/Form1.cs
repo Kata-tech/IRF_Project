@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinalVersion.Controllers;
+using FinalVersion.Services;
 
 namespace FinalVersion
 {
@@ -17,8 +18,11 @@ namespace FinalVersion
         public Form1()
         {
             InitializeComponent();
+
         }
 
+       
+        
 
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,6 +47,30 @@ namespace FinalVersion
                 MessageBox.Show(ex.Message);
             }
 
+            
+
+        }
+
+        private Point lastPos;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (MousePosition != lastPos)
+            {
+                MouseHasntMoved();
+                timer1.Stop();
+            }
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            timer1.Stop();
+            lastPos = MousePosition;
+        }
+
+        public void MouseHasntMoved()
+        {
+            //Do something
         }
     }
 }
