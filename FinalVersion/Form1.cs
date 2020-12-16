@@ -18,12 +18,9 @@ namespace FinalVersion
         public Form1()
         {
             InitializeComponent();
+            dataGridView1.DataSource = _controller.OrderManager.Adats;
 
         }
-
-       
-        
-
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -49,9 +46,11 @@ namespace FinalVersion
 
             
 
-        }
+    }
 
         private Point lastPos;
+
+        
 
         private void timer1_Tick(object sender, EventArgs e)
         {

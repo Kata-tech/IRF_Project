@@ -37,7 +37,7 @@ namespace FinalVersion.Controllers
                 throw new ValidationException(
                     "A megadottt forint mennyiség nem megfelelő!");
 
-            var account = new Adat()
+            var adat = new Adat()
             {
                 Telepules = telepules,
                 Hotelnev = hotelnev,
@@ -46,7 +46,7 @@ namespace FinalVersion.Controllers
                 Forint = forint
             };
 
-            var newAccount = OrderManager.CreateAdat(account);
+            var newAccount = OrderManager.CreateAdat(adat);
 
             return newAccount;
         }
